@@ -27,6 +27,22 @@ Civil associations, local self-government, and civic mores are the true guaranto
 **Friedrich Hayek, *The Constitution of Liberty* (1960)**
 Spontaneous order — the emergent coordination of a free society under general rules — is more adaptive and resilient than any designed revolutionary plan. Imposed order (revolutionary or authoritarian) destroys the information and trust that sustain civilized life.
 
+## Understanding the Adversary: Machiavelli's Logic
+
+**Niccolò Machiavelli, *The Prince* (1513)**
+
+Machiavelli represents the doctrine counter-chaos must defend against:
+> "A new order of things always arouses suspicion and is always attacked by those who prospered under the old order."
+
+Machiavelli endorses using force, fraud, and cruelty to seize and consolidate power, especially in chaotic times. He views disorder as opportunity: new rulers must act decisively (even brutally) to prevent greater chaos and entrench control. This is the inverse of counter-chaos.
+
+**Why this matters for counter-chaos:** Machiavellian actors exploit institutional weakness and manufactured crises to justify authoritarian consolidation. Counter-chaos must close the Machiavellian window by:
+- Strengthening institutions before chaos reaches "necessity" justifying cruelty
+- Preventing the disorder that Machiavelli says makes force legitimate
+- Offering constitutional reform as an alternative to Machiavellian "strong rule"
+
+---
+
 ## Tactical Responses to Chaos Exploitation
 
 | Chaos Tactic | Counter Response |

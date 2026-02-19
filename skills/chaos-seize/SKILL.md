@@ -29,6 +29,11 @@ Deliberately generate mass chaos and internal conflict (e.g., the Cultural Revol
 **Abu Bakr Naji, *Management of Savagery* (academic reference)**
 Strategic framework: provoke "vexation and exhaustion" through sustained attacks to trigger security breakdown and societal savagery; then manage the resulting chaos by imposing order, filling the governance vacuum, and consolidating power.
 
+**Niccolò Machiavelli, *The Prince* (1513)**
+> "A new order of things always arouses suspicion and is always attacked by those who prospered under the old order."
+
+Machiavelli pragmatically endorses using force, fraud, and cruelty to seize and consolidate power, especially during chaotic times. He views disorder as opportunity: new rulers must act decisively (even brutally) to prevent greater disorder and establish durable control. Key insight: "Armed prophets succeed; disarmed ones fail" — power consolidated through strength during chaos is the only sustainable power.
+
 ## Application
 
 1. **Identify fault lines** — economic grievances, ethnic tensions, institutional failures, legitimacy gaps.
