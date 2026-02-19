@@ -43,6 +43,9 @@ Civil associations, local self-government, and civic mores are the true guaranto
 **Friedrich Hayek, *The Constitution of Liberty* (1960)**
 Spontaneous order — the emergent coordination of a free society under general rules — is more adaptive and resilient than any designed revolutionary plan. Imposed order (revolutionary or authoritarian) destroys the information and trust that sustain civilized life.
 
+**Adam Smith, *The Wealth of Nations* (1776) & *The Theory of Moral Sentiments* (1759)**
+Smith established the foundational case that free exchange and decentralized moral norms — not central direction — produce social order. His "invisible hand" is the original statement of what Hayek later formalized as spontaneous order. Critically for counter-chaos: Smith identified that concentrated economic privilege (mercantilism, cronyism) generates the material grievances that chaos actors exploit. Closing these fault lines — through transparent markets, rule of law, and accessible opportunity — denies chaos actors their primary fuel.
+
 ## Understanding the Adversary: Machiavelli's Logic
 
 **Niccolò Machiavelli, *The Prince* (1513)**
@@ -56,6 +59,22 @@ Machiavelli endorses using force, fraud, and cruelty to seize and consolidate po
 - Strengthening institutions before chaos reaches "necessity" justifying cruelty
 - Preventing the disorder that Machiavelli says makes force legitimate
 - Offering constitutional reform as an alternative to Machiavellian "strong rule"
+
+## Understanding the Adversary: Sun Tzu's Strategic Logic
+
+**Sun Tzu, *The Art of War* (~500 BC)**
+
+Sun Tzu represents the intelligence and deception dimension of chaos exploitation:
+> "Know your enemy and know yourself; in a hundred battles you will never be in peril."
+> "Supreme excellence consists in breaking the enemy's resistance without fighting."
+> "All warfare is based on deception."
+
+Where Machiavelli endorses brute consolidation, Sun Tzu prescribes calculated deception — appear weak, probe for fault lines, strike only when conditions are certain. Chaos actors trained in Sun Tzu do not generate disorder blindly; they read institutional vulnerabilities and exploit them with precision.
+
+**Why this matters for counter-chaos:** The Sun Tzu-trained adversary is harder to detect than the Leninist accelerationist. Counter-chaos must:
+- Maintain intelligence about where institutional fault lines exist before adversaries exploit them
+- Deny the information asymmetry Sun Tzu depends on — transparency and predictability are armor against strategic deception
+- Apply Sun Tzu's own principle in defense: "Supreme excellence" means resolving crises before they reach the point where force appears necessary
 
 ---
 

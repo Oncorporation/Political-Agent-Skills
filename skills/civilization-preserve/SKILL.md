@@ -35,6 +35,9 @@ A stable mixed constitution and the rule of law prevent mob rule and factional c
 **Confucius, *The Analects***
 Social harmony is sustained through virtue, ritual propriety, and correct social order. The superior person models stability downward; leaders who cultivate virtue naturally pacify the people.
 
+**Adam Smith, *The Theory of Moral Sentiments* (1759)**
+Civil society coheres through *sympathy* — the natural human capacity to share in others' feelings and regulate behavior through internalized moral norms rather than coercion. The "impartial spectator" — conscience shaped by social experience — is civilization's self-regulating mechanism. Where Confucius roots order in virtue cultivated from above, Smith shows it emerging from below through reciprocal moral sentiment. Order that grows from within society is more durable than order imposed upon it.
+
 **Edmund Burke, *Reflections on the Revolution in France* (1790)**
 Gradual, organic reform preserves the accumulated wisdom embedded in institutions. Violent revolution destroys the intergenerational social contract and produces tyranny in place of liberty.
 

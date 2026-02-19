@@ -50,6 +50,13 @@ Strategic framework: provoke "vexation and exhaustion" through sustained attacks
 
 Machiavelli pragmatically endorses using force, fraud, and cruelty to seize and consolidate power, especially during chaotic times. He views disorder as opportunity: new rulers must act decisively (even brutally) to prevent greater disorder and establish durable control. Key insight: "Armed prophets succeed; disarmed ones fail" — power consolidated through strength during chaos is the only sustainable power.
 
+**Sun Tzu, *The Art of War* (~500 BC)**
+> "In the midst of chaos, there is also opportunity."
+> "All warfare is based on deception."
+> "Appear weak when you are strong, and strong when you are weak."
+
+Chaos is not a goal — it is terrain. The disciplined strategist exploits disorder through intelligence, deception, and precise timing rather than raw destruction. Know the enemy's fault lines before striking; move when they are unprepared; withdraw when resistance is strong. Where Alinsky agitates and Lenin accelerates, Sun Tzu calculates — victory belongs to those who read chaos rather than merely generate it.
+
 ## Application
 
 1. **Identify fault lines** — economic grievances, ethnic tensions, institutional failures, legitimacy gaps.

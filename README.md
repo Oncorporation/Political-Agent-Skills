@@ -5,7 +5,7 @@ A collection of AI agent skills exploring political philosophy, power dynamics, 
 ## Install
 
 ```bash
-npx skills add Surn/Political-Agent-Skills
+npx skills add Oncorporation/Political-Agent-Skills
 ```
 
 ## Skills
@@ -158,4 +158,4 @@ python skills/counter-chaos/scripts/validate-doctrine.py counter-chaos "Constitu
 
 ## Browse on skills.sh
 
-[skills.sh/Surn/Political-Agent-Skills](https://skills.sh/Surn/Political-Agent-Skills)
+[skills.sh/Oncorporation/Political-Agent-Skills](https://skills.sh/Oncorporation/Political-Agent-Skills)

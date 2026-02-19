@@ -14,11 +14,14 @@ SKILL_SOURCES = {
         r"Alinsky|Rules for Radicals",
         r"Lenin|Bolshevik",
         r"Mao|Cultural Revolution|Great disorder",
-        r"Naji|Management of Savagery"
+        r"Naji|Management of Savagery",
+        r"Machiavelli|The Prince",
+        r"Sun Tzu|Art of War"
     ],
     "civilization-preserve": [
         r"Aristotle|Politics",
         r"Confucius|Analects",
+        r"Adam Smith|Moral Sentiments",
         r"Burke|Reflections",
         r"democratic|peaceful transition|independent court|free press|civil society"
     ],
@@ -32,7 +35,10 @@ SKILL_SOURCES = {
         r"Burke|Reflections",
         r"Madison|Federalist",
         r"Tocqueville|Democracy in America|civil associations",
-        r"Hayek|Constitution of Liberty|spontaneous.*order"
+        r"Hayek|Constitution of Liberty|spontaneous.*order",
+        r"Adam Smith|Moral Sentiments|Wealth of Nations",
+        r"Machiavelli|The Prince",
+        r"Sun Tzu|Art of War"
     ]
 }
 
