@@ -18,10 +18,9 @@ SKILL_SOURCES = {
     ],
     "civilization-preserve": [
         r"Aristotle|Politics",
-        r"Confucius",
+        r"Confucius|Analects",
         r"Burke|Reflections",
-        r"Madison|Federalist",
-        r"Tocqueville|Democracy in America"
+        r"democratic|peaceful transition|independent court|free press|civil society"
     ],
     "burke-conservative": [
         r"Burke|Reflections on the Revolution|partnership.*generations",

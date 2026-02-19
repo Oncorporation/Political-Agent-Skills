@@ -14,14 +14,14 @@ SKILL_SOURCES = {
         r"Alinsky|Rules for Radicals",
         r"Lenin|Bolshevik",
         r"Mao|Cultural Revolution|Great disorder",
-        r"Naji|Management of Savagery"
+        r"Naji|Management of Savagery",
+        r"Machiavelli|The Prince"
     ],
     "civilization-preserve": [
         r"Aristotle|Politics",
-        r"Confucius",
+        r"Confucius|Analects",
         r"Burke|Reflections",
-        r"Madison|Federalist",
-        r"Tocqueville|Democracy in America"
+        r"democratic|peaceful transition|independent court|free press|civil society"
     ],
     "burke-conservative": [
         r"Burke|Reflections on the Revolution|partnership.*generations",
