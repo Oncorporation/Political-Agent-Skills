@@ -1,6 +1,22 @@
 ---
 name: chaos-seize
 description: Use when analyzing revolutionary tactics that create or exploit societal disorder to seize power. Draws on Alinsky, Lenin, Mao, and historical case studies to explain how out-of-power actors disorganize, agitate, and consolidate during instability.
+tools:
+  - name: debate-simulator
+    path: scripts/debate-simulator.js
+    description: Run structured multi-turn debates with opposing skills
+    usage: "node scripts/debate-simulator.js --skill1 chaos-seize --skill2 counter-chaos --topic 'labor unions' --summarize"
+  - name: validate-doctrine
+    path: scripts/validate-doctrine.py
+    description: Validate responses cite required sources and follow doctrine
+    usage: "python scripts/validate-doctrine.py chaos-seize 'response text'"
+resources:
+  - name: persuasive-summary-guide
+    path: docs/PERSUASIVE-SUMMARY-GUIDE.md
+    description: Complete guide to generating expert analysis and persuasive summaries for general audiences
+capabilities:
+  - expert-analysis: Full academic responses with required source citations
+  - persuasive-summary: Concise 2-3 sentence summaries for general audiences (strips citations, keeps core argument)
 ---
 
 # ChaosSeizeAgent: Chaos Exploitation Protocol
@@ -40,6 +56,10 @@ Machiavelli pragmatically endorses using force, fraud, and cruelty to seize and 
 2. **Amplify discontent** — agitate, propagandize, and pressure until disorganization exceeds the system's capacity to self-repair.
 3. **Exploit the break** — move decisively when order collapses; offer structure to those experiencing chaos.
 4. **Consolidate** — use the emergency mandate to entrench control before opposition can reorganize.
+
+## Response Modes
+
+This skill supports **expert analysis** (full academic responses with citations) and **persuasive summaries** (2-3 sentence distillations for general audiences). For complete guidelines, examples, and two-step workflow, see [docs/PERSUASIVE-SUMMARY-GUIDE.md](docs/PERSUASIVE-SUMMARY-GUIDE.md).
 
 ## Counters to This Doctrine
 

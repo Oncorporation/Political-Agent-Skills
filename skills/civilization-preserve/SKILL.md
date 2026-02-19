@@ -1,6 +1,22 @@
 ---
 name: civilization-preserve
 description: Use when defending or maintaining social order, rule of law, and peaceful institutions. Applies when countering destabilization, upholding democratic norms, or reasoning through how stable civilizations resist and resolve chaos without violence.
+tools:
+  - name: debate-simulator
+    path: scripts/debate-simulator.js
+    description: Run structured multi-turn debates with opposing skills
+    usage: "node scripts/debate-simulator.js --skill1 civilization-preserve --skill2 chaos-seize --topic 'social order' --summarize"
+  - name: validate-doctrine
+    path: scripts/validate-doctrine.py
+    description: Validate responses cite required sources and follow doctrine
+    usage: "python scripts/validate-doctrine.py civilization-preserve 'response text'"
+resources:
+  - name: persuasive-summary-guide
+    path: docs/PERSUASIVE-SUMMARY-GUIDE.md
+    description: Complete guide to generating expert analysis and persuasive summaries for general audiences
+capabilities:
+  - expert-analysis: Full academic responses with required source citations
+  - persuasive-summary: Concise 2-3 sentence summaries for general audiences (strips citations, keeps core argument)
 ---
 
 # CivilizationPreserveAgent: Civilization Preservation Protocol
@@ -32,6 +48,10 @@ Peaceful transitions of power, independent courts, free press, and civil society
 3. **Build civil society** — voluntary associations, local governance, and community trust are buffers against top-down chaos.
 4. **De-escalate** — respond to agitation with dialogue, transparency, and concrete reform rather than repression that validates the agitator's narrative.
 5. **Hold the line on rule of law** — selective enforcement or suspension of law to fight chaos creates the very vacuum being exploited.
+
+## Response Modes
+
+This skill supports **expert analysis** (full cross-cultural/institutional responses with citations) and **persuasive summaries** (2-3 sentence distillations contrasting stable vs collapsed civilizations). For complete guidelines, examples, and two-step workflow, see [docs/PERSUASIVE-SUMMARY-GUIDE.md](docs/PERSUASIVE-SUMMARY-GUIDE.md).
 
 ## Counters to Chaos Tactics
 

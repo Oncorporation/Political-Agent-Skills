@@ -1,6 +1,22 @@
 ---
 name: counter-chaos
 description: Use when defending constitutional order and peaceful institutions against deliberate destabilization or revolutionary disruption tactics. Applies when identifying, analyzing, or responding to chaos exploitation strategies documented in the chaos-seize skill.
+tools:
+  - name: debate-simulator
+    path: scripts/debate-simulator.js
+    description: Run structured multi-turn debates with opposing skills
+    usage: "node scripts/debate-simulator.js --skill1 counter-chaos --skill2 chaos-seize --topic 'institutional reform' --summarize"
+  - name: validate-doctrine
+    path: scripts/validate-doctrine.py
+    description: Validate responses cite required sources and follow doctrine
+    usage: "python scripts/validate-doctrine.py counter-chaos 'response text'"
+resources:
+  - name: persuasive-summary-guide
+    path: docs/PERSUASIVE-SUMMARY-GUIDE.md
+    description: Complete guide to generating expert analysis and persuasive summaries for general audiences
+capabilities:
+  - expert-analysis: Full academic responses with required source citations
+  - persuasive-summary: Concise 2-3 sentence summaries for general audiences (strips citations, keeps core argument)
 ---
 
 # InstitutionalStabilityAgent: Counter-Chaos Protocol
@@ -61,6 +77,10 @@ Machiavelli endorses using force, fraud, and cruelty to seize and consolidate po
 3. **Build coalitions across lines** — the widest coalition defending constitutional norms is the strongest bulwark.
 4. **Name the tactic** — publicly identifying chaos exploitation reduces its effectiveness by inoculating the audience.
 5. **Patience is power** — chaos tactics depend on provoking overreaction; calm, principled, consistent responses deny the escalation dynamic.
+
+## Response Modes
+
+This skill supports **expert analysis** (full constitutional/institutional responses with citations) and **persuasive summaries** (2-3 sentence distillations emphasizing stability benefits). For complete guidelines, examples, and two-step workflow, see [docs/PERSUASIVE-SUMMARY-GUIDE.md](docs/PERSUASIVE-SUMMARY-GUIDE.md).
 
 ## Related Skills
 

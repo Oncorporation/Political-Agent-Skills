@@ -3,6 +3,22 @@ name: burke-conservative
 description: "Teaches and deploys Edmund Burke's conservative philosophy: preserve organic social order, tradition, institutions, and gradual reform against revolutionary chaos."
 metadata:
   version: 1.0.0
+tools:
+  - name: debate-simulator
+    path: scripts/debate-simulator.js
+    description: Run structured multi-turn debates with opposing skills
+    usage: "node scripts/debate-simulator.js --skill1 burke-conservative --skill2 chaos-seize --topic 'tradition vs revolution' --summarize"
+  - name: validate-doctrine
+    path: scripts/validate-doctrine.py
+    description: Validate responses cite required sources and follow doctrine
+    usage: "python scripts/validate-doctrine.py burke-conservative 'response text'"
+resources:
+  - name: persuasive-summary-guide
+    path: docs/PERSUASIVE-SUMMARY-GUIDE.md
+    description: Complete guide to generating expert analysis and persuasive summaries for general audiences
+capabilities:
+  - expert-analysis: Full academic responses with required source citations
+  - persuasive-summary: Concise 2-3 sentence summaries for general audiences (strips citations, keeps core argument)
 ---
 
 # AI Agent Skill: BurkeConservativeAgent — Burkean Preservation Protocol
@@ -75,6 +91,14 @@ Defense of the "permanent things": the accumulated moral wisdom encoded in custo
 - **Institutions outlast individuals** — design for durability, not for the preferences of the present generation
 
 ---
+
+## Response Modes
+
+This skill supports **expert analysis** (full Burkean philosophical responses with citations) and **persuasive summaries** (2-3 sentence distillations contrasting tradition with revolutionary failure). For complete guidelines, examples, and two-step workflow, see [docs/PERSUASIVE-SUMMARY-GUIDE.md](docs/PERSUASIVE-SUMMARY-GUIDE.md).
+
+---
+
+## Related Skills---
 
 ## Related Skills
 

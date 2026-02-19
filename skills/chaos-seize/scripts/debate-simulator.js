@@ -161,6 +161,36 @@ class DebateSimulator {
     };
   }
   
+  generatePersuasiveSummary(skill, response) {
+    /**
+     * Generate a 2-3 sentence persuasive summary for general audiences.
+     * Strips academic citations but preserves core argument and doctrine.
+     * Uses plain, memorable language.
+     */
+    const metadata = this.skillMetadata[skill];
+    
+    // Persuasive summary prompt for AI/human to follow
+    const summaryPrompt = `
+PERSUASIVE SUMMARY GUIDELINES (for ${metadata.name}):
+
+Convert the full response into 2-3 punchy sentences for a general audience:
+- Strip all citations and academic references
+- Keep the core argument and doctrine stance
+- Use active, memorable phrasing
+- Target general comprehension (no jargon)
+- Maintain ideological authenticity
+
+Full Response to Summarize:
+${response}
+
+Generate persuasive summary (2-3 sentences):`;
+    
+    return {
+      prompt: summaryPrompt,
+      placeholder: `[${skill} persuasive summary - to be generated]`
+    };
+  }
+
   simulateTurn(skill, turn, context = []) {
     const prompt = this.generatePrompt(skill, turn, context);
     
@@ -182,12 +212,15 @@ class DebateSimulator {
     };
   }
   
-  runDebate(turns = 3) {
+  runDebate(turns = 3, summarize = false) {
     console.log(`\n${'#'.repeat(70)}`);
     console.log(`DEBATE SIMULATION`);
     console.log(`Topic: ${this.topic}`);
     console.log(`Participants: ${this.skills.map(s => this.skillMetadata[s].name).join(' vs ')}`);
     console.log(`Turns: ${turns} per skill`);
+    if (summarize) {
+      console.log(`Persuasive summaries: ENABLED (general audience mode)`);
+    }
     console.log(`${'#'.repeat(70)}\n`);
     
     const context = [];
@@ -195,6 +228,18 @@ class DebateSimulator {
     for (let turn = 1; turn <= turns; turn++) {
       for (const skill of this.skills) {
         const turnData = this.simulateTurn(skill, turn, context);
+        
+        // Generate persuasive summary if requested
+        if (summarize) {
+          const summaryData = this.generatePersuasiveSummary(skill, turnData.response);
+          turnData.summaryPrompt = summaryData.prompt;
+          turnData.summary = summaryData.placeholder;
+          
+          console.log(`\n${'-'.repeat(70)}`);
+          console.log("📝 PERSUASIVE SUMMARY PROMPT (for general audience):");
+          console.log(summaryData.prompt);
+        }
+        
         context.push(turnData);
         this.transcript.push(turnData);
       }
@@ -221,6 +266,9 @@ class DebateSimulator {
 if (require.main === module) {
   const args = process.argv.slice(2);
   
+  // Check for --list first
+  let listMode = args.includes('--list');
+  
   // Create temporary simulator to get available skills and pairings
   const tempSimulator = new (class {
     constructor() {
@@ -246,20 +294,55 @@ if (require.main === module) {
       }
       return skills.sort();
     }
+    
+    generateDebatePairings() {
+      const pairings = {};
+      const predefinedPairings = {
+        "disruption-vs-preservation": ["chaos-seize", "civilization-preserve"],
+        "attack-vs-counter": ["chaos-seize", "counter-chaos"],
+        "tradition-vs-revolution": ["burke-conservative", "chaos-seize"],
+        "stability-coalition": ["burke-conservative", "civilization-preserve", "counter-chaos"]
+      };
+      
+      for (const [name, skillList] of Object.entries(predefinedPairings)) {
+        if (skillList.every(s => this.availableSkills.includes(s))) {
+          pairings[name] = skillList;
+        }
+      }
+      return pairings;
+    }
   })();
   
-  // Parse arguments
+  const availablePairings = tempSimulator.generateDebatePairings();
+  
+  // Handle --list mode early
+  if (listMode) {
+    console.log("\n📚 Available Skills:");
+    for (const skill of tempSimulator.availableSkills) {
+      console.log(`  - ${skill}`);
+    }
+    
+    console.log("\n🎭 Available Debate Pairings:");
+    if (Object.keys(availablePairings).length === 0) {
+      console.log("  (No meaningful pairings available with current skills)");
+    } else {
+      for (const [name, skillList] of Object.entries(availablePairings)) {
+        console.log(`  ${name}: ${skillList.join(' ↔ ')}`);
+      }
+    }
+    process.exit(0);
+  }
+  
+  // Parse remaining arguments
   let skills = [];
   let topic = "General political philosophy";
   let turns = 3;
   let output = null;
   let pairing = null;
-  let listMode = false;
+  let summarize = false;
   
   for (let i = 0; i < args.length; i++) {
-    if (args[i] === '--list') {
-      listMode = true;
-    } else if (args[i] === '--skill1' && args[i + 1]) {
+    if (args[i] === '--skill1' && args[i + 1]) {
       skills[0] = args[i + 1];
       i++;
     } else if (args[i] === '--skill2' && args[i + 1]) {
@@ -277,15 +360,18 @@ if (require.main === module) {
     } else if (args[i] === '--pairing' && args[i + 1]) {
       pairing = args[i + 1];
       i++;
+    } else if (args[i] === '--summarize') {
+      summarize = true;
     }
   }
   
-  // Create simulator to get pairings
-  const simulator = new DebateSimulator(skills.length > 0 ? skills : ["placeholder"], topic);
-  const availablePairings = simulator.generateDebatePairings();
+  // Use pairing if specified
+  if (pairing && availablePairings[pairing]) {
+    skills = availablePairings[pairing].slice(0, 2);
+  }
   
-  // Show available skills and pairings if requested
-  if (listMode || skills.length === 0) {
+  // Show help if no skills specified
+  if (skills.length === 0) {
     console.log("\n📚 Available Skills:");
     for (const skill of tempSimulator.availableSkills) {
       console.log(`  - ${skill}`);
@@ -300,14 +386,14 @@ if (require.main === module) {
       }
     }
     
-    if (listMode) {
-      process.exit(0);
-    }
-  }
-  
-  // Use pairing if specified
-  if (pairing && availablePairings[pairing]) {
-    skills = availablePairings[pairing].slice(0, 2);
+    console.log("\nUsage: node debate-simulator.js --skill1 <name> --skill2 <name> --topic <topic>");
+    console.log("   or: node debate-simulator.js --pairing <pairing> --topic <topic>");
+    console.log("\nRun with --list to see available skills and pairings");
+    console.log("\nOptions:");
+    console.log("  --turns <n>       Number of turns per skill (default: 3)");
+    console.log("  --output <file>   Save transcript to JSON file");
+    console.log("  --summarize       Generate persuasive summaries for general audiences");
+    process.exit(1);
   }
   
   if (skills.length < 2) {
@@ -315,13 +401,14 @@ if (require.main === module) {
     console.log("   or: node debate-simulator.js --pairing <pairing> --topic <topic>");
     console.log("\nRun with --list to see available skills and pairings");
     console.log("\nOptions:");
-    console.log("  --turns <n>     Number of turns per skill (default: 3)");
-    console.log("  --output <file> Save transcript to JSON file");
+    console.log("  --turns <n>       Number of turns per skill (default: 3)");
+    console.log("  --output <file>   Save transcript to JSON file");
+    console.log("  --summarize       Generate persuasive summaries for general audiences");
     process.exit(1);
   }
   
   const finalSimulator = new DebateSimulator(skills, topic);
-  finalSimulator.runDebate(turns);
+  finalSimulator.runDebate(turns, summarize);
   
   if (output) {
     finalSimulator.exportTranscript(output);
