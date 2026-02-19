@@ -14,10 +14,10 @@ Each skill is self-contained and auto-discovers its bundled tools through SKILL.
 
 | Skill | Description |
 |---|---|
-| [`chaos-seize`](skills/chaos-seize/SKILL.md) | Analyzes revolutionary tactics that create or exploit societal disorder to seize power — draws on Alinsky, Lenin, Mao, and historical case studies |
-| [`civilization-preserve`](skills/civilization-preserve/SKILL.md) | Defends social order, rule of law, and peaceful institutions — counters destabilization and upholds democratic norms |
+| [`chaos-seize`](skills/chaos-seize/SKILL.md) | Analyzes revolutionary tactics that create or exploit societal disorder to seize power — draws on Alinsky, Lenin, Mao, Machiavelli, Sun Tzu, and historical case studies |
+| [`civilization-preserve`](skills/civilization-preserve/SKILL.md) | Defends social order, rule of law, and peaceful institutions — counters destabilization and upholds democratic norms (Aristotle, Confucius, Burke, Adam Smith) |
 | [`burke-conservative`](skills/burke-conservative/SKILL.md) | Teaches Burkean conservative philosophy — preserve organic institutions, tradition, and gradual reform against revolutionary chaos |
-| [`counter-chaos`](skills/counter-chaos/SKILL.md) | Defends constitutional order against deliberate destabilization — operational counter to chaos exploitation tactics (Madison, Tocqueville, Hayek) |
+| [`counter-chaos`](skills/counter-chaos/SKILL.md) | Defends constitutional order against deliberate destabilization — operational counter to chaos exploitation tactics (Madison, Tocqueville, Hayek, Adam Smith; adversary analysis: Machiavelli, Sun Tzu) |
 
 ## Architecture
 
