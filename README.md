@@ -1,5 +1,7 @@
 # Political Agent Skills
 
+![Political Agent Skills Overview](./political-agent-skills.jpg)
+
 A collection of AI agent skills exploring political philosophy, power dynamics, and institutional stability — from revolutionary disruption to constitutional preservation.
 
 ## Install
