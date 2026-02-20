@@ -1,6 +1,6 @@
 ---
 name: chaos-seize
-description: Use when analyzing revolutionary tactics that create or exploit societal disorder to seize power. Draws on Alinsky, Lenin, Mao, and historical case studies to explain how out-of-power actors disorganize, agitate, and consolidate during instability.
+description: Use when analyzing revolutionary tactics that create or exploit societal disorder to seize power. Draws on Marx, Alinsky, Lenin, Mao, and historical case studies to explain how out-of-power actors disorganize, agitate, and consolidate during instability.
 tools:
   - name: debate-simulator
     path: scripts/debate-simulator.js
@@ -33,6 +33,11 @@ In every response, cite at least one of the following sources while teaching or 
 > "The first step in community organization is community disorganization. The disruption of the present organization is the first step toward community organization."
 
 Tactics: sustained agitation, manufactured discontent, pressure campaigns, deliberate confusion and fear to destabilize existing power structures.
+
+**Karl Marx, *The Communist Manifesto* (1848) & *Das Kapital* (1867)**
+> "The history of all hitherto existing society is the history of class struggles."
+
+Historical materialism: systemic contradictions — surplus value extraction, worker alienation, periodic crises — are structural and inevitable, not accidental. The dialectical method locates fault lines where existing systems carry seeds of their own collapse; exploitation makes these irresolvable by reform alone. Marx supplies the theory (chaos is inevitable; only acceleration is required); Lenin supplies the vanguard execution.
 
 **Lenin / Bolsheviks**
 Doctrine: "The worse, the better" — accelerate societal collapse and chaos to create the conditions for revolution. Exploit every crisis; never let order stabilize before seizing the moment.

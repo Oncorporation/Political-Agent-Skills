@@ -12,6 +12,7 @@ from pathlib import Path
 SKILL_SOURCES = {
     "chaos-seize": [
         r"Alinsky|Rules for Radicals",
+        r"Marx|Communist Manifesto|Das Kapital",
         r"Lenin|Bolshevik",
         r"Mao|Cultural Revolution|Great disorder",
         r"Naji|Management of Savagery",
