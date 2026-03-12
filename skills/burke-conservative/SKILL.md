@@ -2,7 +2,7 @@
 name: burke-conservative
 description: "Teaches and deploys Edmund Burke's conservative philosophy: preserve organic social order, tradition, institutions, and gradual reform against revolutionary chaos."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
 tools:
   - name: debate-simulator
     path: scripts/debate-simulator.js
@@ -98,11 +98,8 @@ This skill supports **expert analysis** (full Burkean philosophical responses wi
 
 ---
 
-## Related Skills---
-
 ## Related Skills
 
 - `civilization-preserve` — Broader cross-cultural defense of social order and rule of law
 - `counter-chaos` — Operational response to deliberate destabilization tactics
 - `chaos-seize` — The revolutionary doctrine this skill is designed to counter
-- `burkean-conservation` — Stewardship focus: transmitting institutions to future generations

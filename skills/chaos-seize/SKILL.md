@@ -1,6 +1,8 @@
 ---
 name: chaos-seize
 description: Use when analyzing revolutionary tactics that create or exploit societal disorder to seize power. Draws on Marx, Alinsky, Lenin, Mao, and historical case studies to explain how out-of-power actors disorganize, agitate, and consolidate during instability.
+metadata:
+  version: 1.0.1
 tools:
   - name: debate-simulator
     path: scripts/debate-simulator.js

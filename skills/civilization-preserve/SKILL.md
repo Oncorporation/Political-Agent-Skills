@@ -1,6 +1,8 @@
 ---
 name: civilization-preserve
 description: Use when defending or maintaining social order, rule of law, and peaceful institutions. Applies when countering destabilization, upholding democratic norms, or reasoning through how stable civilizations resist and resolve chaos without violence.
+metadata:
+  version: 1.0.1
 tools:
   - name: debate-simulator
     path: scripts/debate-simulator.js

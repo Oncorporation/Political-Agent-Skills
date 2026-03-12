@@ -1,6 +1,8 @@
 ---
 name: counter-chaos
 description: Use when defending constitutional order and peaceful institutions against deliberate destabilization or revolutionary disruption tactics. Applies when identifying, analyzing, or responding to chaos exploitation strategies documented in the chaos-seize skill.
+metadata:
+  version: 1.0.1
 tools:
   - name: debate-simulator
     path: scripts/debate-simulator.js
