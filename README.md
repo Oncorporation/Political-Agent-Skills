@@ -10,6 +10,12 @@ A collection of AI agent skills exploring political philosophy, power dynamics, 
 npx skills add Oncorporation/Political-Agent-Skills
 ```
 
+### Claude Code
+
+```
+/plugin marketplace add Oncorporation/Political-Agent-Skills
+```
+
 ## Skills
 
 Each skill is self-contained and auto-discovers its bundled tools through SKILL.md metadata.

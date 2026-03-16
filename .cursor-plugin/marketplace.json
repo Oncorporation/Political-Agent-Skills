@@ -1,0 +1,54 @@
+{
+  "id": "political-agent-skills",
+  "name": "Political Agent Skills",
+  "description": "Collection of Python skills, tools, and automation for political AI agents.",
+  "version": "0.1.0",
+  "categories": ["python", "tools", "automation", "ai"],
+  "logo": "icon.png",
+  "readme": "README.md",
+  "license": "MIT",
+  "repository": "https://github.com/Oncorporation/Political-Agent-Skills",
+  "homepage": "https://github.com/Oncorporation/Political-Agent-Skills",
+  "author": {
+    "name": "Oncorporation"
+  },
+  "keywords": ["political", "agents", "python", "automation", "skills"],
+  "plugins": [
+    {
+      "name": "burke-conservative",
+      "description": "Teaches and deploys Edmund Burke's conservative philosophy: preserve organic social order, tradition, institutions, and gradual reform against revolutionary chaos.",
+      "source": {
+        "source": "github",
+        "repo": "Oncorporation/Political-Agent-Skills",
+        "path": "skills/burke-conservative"
+      }
+    },
+    {
+      "name": "chaos-seize",
+      "description": "Analyzing revolutionary tactics that create or exploit societal disorder to seize power.",
+      "source": {
+        "source": "github",
+        "repo": "Oncorporation/Political-Agent-Skills",
+        "path": "skills/chaos-seize"
+      }
+    },
+    {
+      "name": "civilization-preserve",
+      "description": "Defending or maintaining social order, rule of law, and peaceful institutions.",
+      "source": {
+        "source": "github",
+        "repo": "Oncorporation/Political-Agent-Skills",
+        "path": "skills/civilization-preserve"
+      }
+    },
+    {
+      "name": "counter-chaos",
+      "description": "Defending constitutional order and peaceful institutions against deliberate destabilization or revolutionary disruption tactics.",
+      "source": {
+        "source": "github",
+        "repo": "Oncorporation/Political-Agent-Skills",
+        "path": "skills/counter-chaos"
+      }
+    }
+  ]
+}
